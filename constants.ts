@@ -1,0 +1,38 @@
+
+import { TripMember, ScheduleItem, TripConfig } from './types';
+
+export const COLORS = {
+  stitch: '#6EC1E4',
+  donald: '#FFD966',
+  navy: '#1F3C88',
+  cream: '#F8F9F5',
+  
+  // Categories
+  attraction: '#A3D166',    // Green
+  restaurant: '#FF9E9E',    // Salmon/Pink (Replacing Food)
+  food: '#FF9E9E',          // Fallback for old data
+  transport: '#6EC1E4',     // Blue
+  stay: '#FFD966',          // Yellow
+  shopping: '#F4A261',      // Orange (New)
+  other: '#A8DADC'          // Teal
+};
+
+export const MOCK_MEMBERS: TripMember[] = [
+  { id: '1', name: 'Stitch', avatar: 'https://picsum.photos/seed/stitch/200' },
+  { id: '2', name: 'Donald', avatar: 'https://picsum.photos/seed/donald/200' },
+  { id: '3', name: 'Lilo', avatar: 'https://picsum.photos/seed/lilo/200' },
+  { id: '4', name: 'Daisy', avatar: 'https://picsum.photos/seed/daisy/200' }
+];
+
+export const MOCK_TRIP_CONFIG: TripConfig = {
+  startDate: new Date(Date.now() + 86400000 * 5).toISOString().split('T')[0],
+  duration: 5,
+  tripName: 'Tokyo Adventure 2024',
+  region: 'Tokyo, Japan'
+};
+
+export const CURRENCY_RATES = {
+  JPY: 1,
+  HKD: 19,
+  AUD: 95
+};
